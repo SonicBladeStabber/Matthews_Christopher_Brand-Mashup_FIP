@@ -1,0 +1,8 @@
+html{
+    max-width: 1896px;
+}
+#siteContainer{
+    width: 1896px;
+    height: 30px;
+    background-color: yellowgreen;
+}
