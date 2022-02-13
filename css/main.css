@@ -1,8 +1,8 @@
 html{
-    max-width: 1896px;
+    max-width: 1886px;
 }
 #siteContainer{
-    width: 1896px;
-    height: 30px;
+    width: 1886px;
     background-color: yellowgreen;
+    margin-left: 17px;
 }
