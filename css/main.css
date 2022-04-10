@@ -203,14 +203,14 @@ footer{
 #contactContainer{
     margin-top: 50px;
     margin-bottom: 100px;
-    width:1903px;
+    width:100vw;
     height: fit-content;
     display: flex;
     justify-content: center;
 }
 
 #contactForm-box{
-    width:1016px;
+    width:720px;
     height: 1294px;
     background: rgb(163, 31, 31);
     display: flex;
@@ -235,14 +235,14 @@ h3#contact{
 h4.contactForm-text{
     font-size: 48px;
     background: rgb(255, 114, 32);
-    width: 822px;
+    width: 620px;
     height: fit-content;
     padding: 20px;
 }
 
 h5#con{
     height: 467px;
-    width: 822px;
+    width: 620px;
     padding: 20px;
     background: rgb(255, 114, 32);
     font-size: 36px;
@@ -273,6 +273,7 @@ h5#con{
 }
 .image-2, .image-1{
     width: 31.927083333333332vw;
+    height: 27.8125vw;
 }
 #overUnder-home{
     display: flex;
@@ -283,8 +284,9 @@ h5#con{
     align-content: center;
     margin-left: 32px;
 }
-.halfImg-home{
+.halfImg-home-1, .halfImg-home-2{
     width: 31.927083333333332vw;
+    height: 12.96875vw;
 }
 
  /*--Home_END----------------------------------*/
@@ -340,11 +342,11 @@ h5#con{
     justify-content: space-around;
     margin-bottom: 70px;
 }
-.mixImg-lower{
+.mixImg-lower1, .mixImg-lower2{
     display: flex;
     background-image: url("https://via.placeholder.com/806");
-    width: 806px;
-    height: 806px;
+    width: 41.979166666666664vw;
+    height: 41.979166666666664vw;
     justify-content: center;
     align-items: flex-end;
 }
@@ -370,7 +372,7 @@ h6{
     margin-top: 25px;
 }
 #promoImg-Large{
-    width: 1230px;
+    width: 100vw;
     height: 692px;
 }
 
@@ -412,6 +414,9 @@ h3.cool{
         visibility: hidden;
         position: absolute;
     }
+    #burgerNav button{
+        visibility: hidden;
+    }
 }
 @media screen and (max-width: 939.9px) {
     #burger-div{
@@ -423,6 +428,9 @@ h3.cool{
     }
     .nav-link{
         width: 1px;
+    }
+    #burgerNav button {
+        visibility: visible;
     }
 }
 
@@ -487,22 +495,38 @@ a:link, a:visited{
 }
 
 .image-1 {
-    background-image: src("images/hom");
-    background-size: contain;
+    background-image: url("../images/hom.jpg");
+    background-size: 31.927083333333332vw 27.8125vw;
 }
 .image-2 {
-
+    background-image: url("../images/shop.jpg");
+    background-size: 31.927083333333332vw 27.8125vw;
+}
+.halfImg-home-1 {
+    background-image: url("https://via.placeholder.com/500x200");
+    background-size: 31.927083333333332vw 12.96875vw;
+}
+.halfImg-home-2 {
+    background-image: url("../images/for.jpg");
+    background-size: 31.927083333333332vw 12.96875vw;
+}
+.mixImg-lower1 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/0/02/Creemore_logo.png");
+    background-size: 41.979166666666664vw 41.979166666666664vw;
+}
+.mixImg-lower2 {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5b50d27a7e3c3a5078ed9f5c/1537895973084-HP24C8EGH2J731MM6VWD/Native_Logo_Color.jpg");
+    background-size: 41.979166666666664vw 41.979166666666664vw;
 }
 /*Reguardless end*/
 
 /*1184 px*/
 
-/*-burger start-*/
-    /*body
-    {
-	    font-family: Helvetica, Arial, sans-serif;
-	    padding: 20px;
-    }*/
+
+
+    .hidden {
+        visibility: hidden;
+    }
 
     a
     {
@@ -517,6 +541,7 @@ a:link, a:visited{
 	    border: 1px;
 	    transition: all 400ms ease;
 	    margin-left: auto;
+        margin-right: 30px;
     }
 
     #burgerNav button.expanded
