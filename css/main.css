@@ -2,6 +2,7 @@
 
 
 /*--Start_Shared-------------------------------------------------*/
+@media screen and (min-width: 720px) {
 
 html{
     max-width: 100vw;
@@ -48,15 +49,7 @@ p{
     transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
 }
-a:link, a:visited{
-    text-decoration: none;
-    color: unset;
-}
 
-.nav-link:hover{
-    color: rgb(48, 153, 202);
-    ;
-}
 .nav-link{
     width: 10.51vw;
     height: 135px;
@@ -79,18 +72,6 @@ h2{
 @-moz-keyframes fadeIn{
     from {opacity: 0%;}
     to {opacity: 100%;}
-}
-.nav-link:hover{
-    animation-name: expand;
-    -moz-animation-name: expand;
-    animation-duration: 0.3s;
-    -moz-animation-duration: 0.3s;
-    animation-fill-mode: both;
-    -o-animation-fill-mode: both;
-    animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    transition-duration: 0.3s;
-
 }
 
 @-moz-keyframes expand{
@@ -190,17 +171,7 @@ footer{
     height: 125px;
     width: 125px;
 }
-#arrow:hover{
-    animation-name: moveArrow;
-    -moz-animation-name: moveArrow;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-    -moz-animation-timing-function: ease-in-out;
-}
+
 @keyframes moveArrow{
     from {padding-bottom: 0px;}
     to {padding-bottom: 50px;}
@@ -424,5 +395,64 @@ h3.cool{
     font-size: 60px;
 }
 /*--Promotions_end--*/
-
+}
+@media screen and (min-width: 1190.1px){
+    #burger-div{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+@media screen and (max-width:1190px) {
+    h2 {
+        visibility: hidden;
+    }
+    #burger-div{
+        visibility: visible;
+        position: unset;
+    }
+    #logo {
+        background: rgb(163, 31, 31);
+    }
+}
+.nav-link:hover{
+    color: rgb(48, 153, 202);
+}
+.nav-link:hover{
+    animation-name: expand;
+    -moz-animation-name: expand;
+    animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    transition-duration: 0.3s;
+    
+}
+#arrow:hover{
+    animation-name: moveArrow;
+    -moz-animation-name: moveArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+}
+.nav-link{
+    font-size: 1.5vw;
+    font-style: unset;
+    text-decoration: none;
+    animation-name: contract;
+    -moz-animation-name: contract;
+    animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: unset;
+}
 /*1184 px*/
