@@ -4,21 +4,15 @@
 /*--Start_Shared-------------------------------------------------*/
 @media screen and (min-width: 720px) {
 
-html{
-    max-width: 100vw;
-}
+
 p{
-    font-size: 60px;
+    font-size: 40px;
 }
 #logo{
     max-height: 243px;
     max-width: 432px;
 }
-#siteContainer{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
+
 #headerContainer{
     display: flex;
     flex-direction: row;
@@ -30,24 +24,15 @@ p{
 #navAlign{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
     justify-content: space-around;
     background: rgb(163, 31, 31);
 }
 #navContainer{
     display: flex;
     flex-direction: column;
-}
-.nav-link{
-    font-size: 20px;
-    font-style: unset;
-    text-decoration: none;
-    animation-name: contract;
-    -moz-animation-name: contract;
-    animation-duration: 0.3s;
-    -moz-animation-duration: 0.3s;
-    transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
+    width: 100%;
+    align-content: space-around;
 }
 
 .nav-link{
@@ -75,20 +60,20 @@ h2{
 }
 
 @-moz-keyframes expand{
-    from {font-size: 20px;}
-    to {font-size: 35px;}
+    from {font-size: 1.5vw;}
+    to {font-size: 2vw;}
 }
 @keyframes expand{
-    from {font-size: 20px;}
-    to {font-size: 35px;}
+    from {font-size: 1.5vw;}
+    to {font-size: 2vw;}
 }
 @-moz-keyframes contract{
-    from {font-size: 35px;}
-    to {font-size: 20px;}
+    from {font-size: 2vw;}
+    to {font-size: 1.5vw;}
 }
 @keyframes contract{
-    from {font-size: 35px;}
-    to {font-size: 20px;}
+    from {font-size: 2vw;}
+    to {font-size: 1.5vw;}
 }
 #socialMedia{
     height: 100px;
@@ -122,17 +107,34 @@ h1{
 
 .hero{
     margin-top: 100px;
-    height: 972px;
-    width: 1903px;
+    height: 51vw;
+    width: 100vw;
     background-image: url("https://via.placeholder.com/1903x972");
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100vw 51vw;
 
 }
+#heroContainer{
+    width: 100vw;
+    margin-bottom: 10px;
+}
+/*
+img{
+    width: 100%;
+    height: 100%;
+}
+*/
 #titleJustify{
     display: flex;
     justify-content: center;
     width: 100vw;
     
+}
+#hero-P {
+    font-size: 3vw;
+    color: white;
 }
 .titlePromo, .titleContact{
     margin-top: 30px;
@@ -142,8 +144,8 @@ h1{
 footer{
     display: flex;
     height: 338px;
-    width: 1903px;
-    background: rgb(56, 96, 129);
+    width: 100vw;
+    background: #676BA6;
     flex-direction: row;
 }
 #leftyFoot{
@@ -153,8 +155,10 @@ footer{
 
 #foot-bigList{
     height: 240px;
-    width: 1470px;
-    background: rgb(34, 64, 88);
+    width: 50vw;
+    background: #676BA6;
+    border: solid 2px;
+    border-color: white;
     margin: 30px;
 }
 #copyright{
@@ -185,11 +189,14 @@ footer{
     height: fit-content;
     width: fit-content;
     align-self: flex-end;
-    margin-left: 500px;
-    background: grey;
+    max-width: 45%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: rgba(126, 126, 126, 0.562);
     padding: 40px;
-
+    font-size: 10px;
 }
+
 /*--End_Shared---------------------------------------*/
 
 /*--Contact_START------------------------------------*/
@@ -253,24 +260,23 @@ h5#con{
 #imageCache-Home{
     display: flex;
     flex-direction: row;
-    width: 1903px;
-    height: 613px;
-    margin-top: 50px;
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #imgSideL-2{
     display: flex;
     flex-direction: row;
     height: fit-content;
     width: fit-content;
-    column-gap: 32px;
+    column-gap: 1.6666666666666667vw;
 }
-.image-2{
-    width: 613px;
-    height: 534px;
+.image-2, .image-1{
+    width: 31.927083333333332vw;
 }
 #overUnder-home{
     display: flex;
-    height: 534px;
+    height: 27.8125vw;
     width: fit-content;
     flex-direction: column;
     justify-content: space-between;
@@ -278,9 +284,9 @@ h5#con{
     margin-left: 32px;
 }
 .halfImg-home{
-    width: 613px;
-    height: 249px;
+    width: 31.927083333333332vw;
 }
+
  /*--Home_END----------------------------------*/
  /*--adverts_START--------------------------*/
 #pageName-Container{
@@ -321,11 +327,12 @@ h5#con{
     -moz-column-gap: 30px;
 }
 #mixTxt{
-    font-size: 42px;
-    width: 469px;
+    font-size: 41px;
     height: fit-content;
-    background: grey;
+    background: rgb(163, 31, 31);
+    color: white;
     padding: 40px;
+    height: 100%;
 }
 #mixContainer-Lower{
     display: flex;
@@ -340,6 +347,10 @@ h5#con{
     height: 806px;
     justify-content: center;
     align-items: flex-end;
+}
+.mixImg-lower h6{
+    color: white;
+    padding-top: 20px;
 }
 h6{
     font-size: 42px;
@@ -384,36 +395,52 @@ h6#txt-and-box{
     border-top: solid #ddd;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100vw;
 }
 .list-p{
     font-size: 55px;
     padding-top: 100px;
     margin-left: -50px;
-    width: 1000px;
 }
 h3.cool{
     font-size: 60px;
 }
 /*--Promotions_end--*/
 }
-@media screen and (min-width: 1190.1px){
+@media screen and (min-width: 940px){
     #burger-div{
         visibility: hidden;
         position: absolute;
     }
 }
-@media screen and (max-width:1190px) {
-    h2 {
-        visibility: hidden;
-    }
+@media screen and (max-width: 939.9px) {
     #burger-div{
         visibility: visible;
         position: unset;
     }
+    h2 {
+        visibility: hidden;
+    }
+    .nav-link{
+        width: 1px;
+    }
+}
+
+@media screen and (max-width:719.9px) {
     #logo {
         background: rgb(163, 31, 31);
     }
 }
+/*Reguardless start*/
+html{
+    max-width: 100vw;
+}
+#siteContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+/*seperation*/
 .nav-link:hover{
     color: rgb(48, 153, 202);
 }
@@ -455,4 +482,86 @@ a:link, a:visited{
     text-decoration: none;
     color: unset;
 }
+#BrandVideo{
+    width: 70%;
+}
+
+.image-1 {
+    background-image: src("images/hom");
+    background-size: contain;
+}
+.image-2 {
+
+}
+/*Reguardless end*/
+
 /*1184 px*/
+
+/*-burger start-*/
+    /*body
+    {
+	    font-family: Helvetica, Arial, sans-serif;
+	    padding: 20px;
+    }*/
+
+    a
+    {
+	    text-decoration: none;
+    }
+
+    #burgerNav button
+    {
+	    background: url("../images/burger.svg") center no-repeat;
+	    height: 20px;
+	    width: 20px;
+	    border: 1px;
+	    transition: all 400ms ease;
+	    margin-left: auto;
+    }
+
+    #burgerNav button.expanded
+    {
+	    transform: rotate(90deg);
+    }
+
+    #burgerNav
+    {
+	    display: flex;
+	    flex-direction: column;
+    }
+
+    #burgerNav li a
+    {
+	    display: block;
+	    color: #ffffff;
+	    padding: 10px 0 10px 0;
+	    text-align: center;
+    }
+
+    #burgerNav li
+    {
+	    border-bottom: 1px solid #efefef;
+    }
+
+    #burgerNav li:first-child
+    {
+	    border-top: 1px solid #efefef;
+    }
+
+    #burgerCon
+    {
+        position: absolute;
+	    margin-top: 20px;
+	    display: none;
+        background: rgb(163, 31, 31);
+        width: 100vw;
+        top: 53px;
+        left: 0px;
+    }
+
+    #burgerCon.slideToggle
+    {
+	    display: block;
+    }
+
+/*-burger end-*/
